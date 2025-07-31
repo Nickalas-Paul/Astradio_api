@@ -17,7 +17,7 @@ COPY . .
 RUN npm run build
 
 # Copy SQL schema file to dist directory
-RUN cp src/database/schema.sql dist/database/schema.sql
+RUN mkdir -p dist/database && cp src/database/schema.sql dist/database/schema.sql
 
 # Expose port
 EXPOSE 3001
