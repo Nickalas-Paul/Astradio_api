@@ -15,14 +15,8 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": false,
-    "types": ["node"],
-    "baseUrl": ".",
-    "paths": {
-      "@astradio/astro-core": ["packages/astro-core/dist"],
-      "@astradio/audio-mappings": ["packages/audio-mappings/dist"],
-      "@astradio/types": ["packages/types/dist"]
-    }
+    "types": ["node"]
   },
-  "include": ["src/**/*", "packages/**/*"],
+  "include": ["src/**/*"],
   "exclude": ["node_modules", "dist", "**/*.test.ts", "**/*.spec.ts"]
 } 
