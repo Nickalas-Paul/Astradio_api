@@ -5,11 +5,11 @@ import morgan from 'morgan';
 import compression from 'compression';
 import dotenv from 'dotenv';
 import { z } from 'zod';
-import { astroCore } from '../packages/astro-core/dist';
-import { audioEngine, exportEngine, advancedPlaybackEngine } from '../packages/audio-mappings/dist';
-import { generateMusicNarration, generateModeSpecificNarration, generateDualChartNarration } from '../packages/audio-mappings/dist';
-import { BirthData } from '../packages/types/dist';
-import { AudioGenerator } from '../packages/audio-mappings/dist';
+import { astroCore } from '@astradio/astro-core';
+import { audioEngine, exportEngine, advancedPlaybackEngine } from '@astradio/audio-mappings';
+import { generateMusicNarration, generateModeSpecificNarration, generateDualChartNarration } from '@astradio/audio-mappings';
+import { BirthData } from '@astradio/types';
+import { AudioGenerator } from '@astradio/audio-mappings';
 
 // Phase 6.3: User System & Social Features
 import { initializeDatabase } from './database';
