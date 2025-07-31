@@ -16,9 +16,6 @@ COPY . .
 # Build the TypeScript app
 RUN npm run build
 
-# Copy SQL schema file to dist directory
-RUN mkdir -p dist/database && cp src/database/schema.sql dist/database/schema.sql
-
 # Expose port
 EXPOSE 3001
 
