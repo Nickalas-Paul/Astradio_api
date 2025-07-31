@@ -1,8 +1,7 @@
-import { getDatabase } from '../database';
-import { v4 as uuidv4 } from 'uuid';
-import { astroCore } from '@astradio/astro-core';
-import { audioEngine } from '@astradio/audio-mappings';
-import { generateMusicNarration } from '@astradio/audio-mappings';
+import { Request, Response } from 'express';
+import { astroCore } from '../../packages/astro-core/dist';
+import { audioEngine } from '../../packages/audio-mappings/dist';
+import { generateMusicNarration } from '../../packages/audio-mappings/dist';
 
 export interface DailyChart {
   id: string;
